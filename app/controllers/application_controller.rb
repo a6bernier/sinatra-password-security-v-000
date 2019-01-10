@@ -12,7 +12,6 @@ class ApplicationController < Sinatra::Base
 		erb :index
 	end
 
-
 	post "/signup" do
 		erb:signup
 	end
@@ -25,8 +24,6 @@ class ApplicationController < Sinatra::Base
 			redirect "/failure"
 		end
 	end
-
-
 
 	get "/login" do
 		erb :login
