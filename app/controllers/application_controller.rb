@@ -20,6 +20,8 @@ class ApplicationController < Sinatra::Base
 		else
 			redirect "/failure"
 		end
+
+		erb :signup
 	end
 
 	post "/signup" do
