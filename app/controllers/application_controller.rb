@@ -12,6 +12,11 @@ class ApplicationController < Sinatra::Base
 		erb :index
 	end
 
+
+	post "/signup" do
+		erb:signup
+	end
+
 	post "/signup" do
 		user = User.new(:username => params[:username], :password => params[:password])
 		if user.save
@@ -21,9 +26,7 @@ class ApplicationController < Sinatra::Base
 		end
 	end
 
-	post "/signup" do
-		#your code here!
-	end
+
 
 	get "/login" do
 		erb :login
