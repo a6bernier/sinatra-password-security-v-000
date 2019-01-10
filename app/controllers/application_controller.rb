@@ -21,9 +21,6 @@ class ApplicationController < Sinatra::Base
 		end
 	end
 
-		erb :signup
-	end
-
 	post "/signup" do
 		#your code here!
 	end
